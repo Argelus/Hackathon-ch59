@@ -82,5 +82,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // --- exporta al global (para páginas que usan window.products / window.resolveImg)
 window.products = products;
-window.resolveImg = resolveImg;   // si definiste resolveImg en products.js
+window.resolveImg = resolveImg; 
 

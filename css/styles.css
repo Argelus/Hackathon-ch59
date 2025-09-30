@@ -339,10 +339,10 @@ h6 {
 
 /* Haz más visible el aviso del mapa */
 .body-map-section p.text-muted{
-  color: rgba(255,255,255,.92) !important;  /* más contraste */
+  color: rgba(255,255,255,.92) !important; 
   font-weight: 800;
   letter-spacing: .3px;
-  text-shadow: 0 1px 2px rgba(0,0,0,.35);   /* leve glow para fondo oscuro */
+  text-shadow: 0 1px 2px rgba(0,0,0,.35);  
 }
 
 

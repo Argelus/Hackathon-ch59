@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const group = map.querySelectorAll(`.body-part[data-part="${partSlug}"]`);
       group.forEach((node) => {
         if (isHot) {
-          // guarda estilos previos (si no estaban guardados)
+          // guarda estilos previos 
           if (!node.dataset.prevFill)   node.dataset.prevFill   = node.style.fill || "";
           if (!node.dataset.prevStroke) node.dataset.prevStroke = node.style.stroke || "";
           if (!node.dataset.prevFilter) node.dataset.prevFilter = node.style.filter || "";

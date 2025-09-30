@@ -1,13 +1,11 @@
 // js/karate.js
 // Karate Page Specific JavaScript
 
-// Si ya tienes resolveImg en products.js, úsalo.
-// Si no, definimos uno compatible aquí.
 function _resolveImgLocal(path) {
   if (typeof resolveImg === "function") return resolveImg(path);
   const base = location.pathname.includes("/body-parts/") ? "../" : "";
-  const cleaned = path.startsWith("/") ? path.slice(1) : path; // "/public/a.jpg" -> "public/a.jpg"
-  return base + cleaned; // "public/a.jpg" o "../public/a.jpg"
+  const cleaned = path.startsWith("/") ? path.slice(1) : path;
+  return base + cleaned; 
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -15,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const productsContainer = document.getElementById("karateProductsContainer");
 
 // Antes: const products = window.products (esto daba undefined)
-// Toma el array global si existe; si no, usa []
 const karateProducts = (typeof products !== "undefined" ? products : []).filter(p => p.category === "karate");
 
 
