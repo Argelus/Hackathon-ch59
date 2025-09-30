@@ -34,7 +34,7 @@ const boxingProducts = [
     { name: "Casco de Entrenamiento", price: "$2899.99", rating: 5, image: "https://cletoreyes.com/cdn/shop/products/04E388.SIL.jpg?v=1715881702&width=800", category: "Protección", },
     { name: "Vendas de Mano Premium", price: "$349.00", rating: 5, image: "https://http2.mlstatic.com/D_NQ_NP_999945-MLU72410547132_102023-O.webp", category: "Accesorios", },
     { name: "Saco de Boxeo 100lb", price: "$2468.99", rating: 5, image: "https://decatlonx.com/image/cache/catalog/P00002820-800x800.jpg", category: "Equipamiento", },
-    { name: "Speed Ball Profesional", price: "$4250.99", rating: 4, image: "hhttps://capitalmma.com.mx/cdn/shop/products/Capturadepantalla_36.png?v=1665895245", category: "Equipamiento", },
+    { name: "Speed Ball Profesional", price: "$4250.99", rating: 4, image: "https://capitalmma.com.mx/cdn/shop/products/Capturadepantalla_36.png?v=1665895245", category: "Equipamiento", },
     { name: "Protector Bucal Doble", price: "$90.99", rating: 4, image: "https://http2.mlstatic.com/D_NQ_NP_960210-MLM44786915471_022021-O-protector-bucal-title-boxing-super-shield-x2-mma-thai-bjj-rd.webp", category: "Protección", },
 ];
 
