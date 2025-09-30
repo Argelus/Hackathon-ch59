@@ -25,17 +25,17 @@ const categoryCards = [
     { id: "muay-thai", name: "Muay Thai", description: "El arte de las ocho extremidades, boxeo tailandés tradicional", image: "https://via.placeholder.com/600x400/f59e0b/000000?text=Muay+Thai", color: "from-amber-500 to-red-600", textColor: "#f59e0b", },
     { id: "jiu-jitsu", name: "Jiu-Jitsu", description: "Arte marcial brasileño especializado en lucha en el suelo", image: "https://via.placeholder.com/600x400/2563eb/000000?text=Jiu+Jitsu", color: "from-blue-600 to-blue-900", textColor: "#3b82f6", },
     { id: "taekwondo", name: "Taekwondo", description: "Arte marcial coreano conocido por sus patadas espectaculares", image: "https://via.placeholder.com/600x400/3b82f6/dc2626?text=Taekwondo", color: "from-blue-500 to-red-500", textColor: "#2563eb", },
-    { id: "boxing", name: "Boxing", description: "El noble arte del pugilismo, técnica y potencia en cada golpe", image: "https://via.placeholder.com/600x400/dc2626/f59e0b?text=Boxing", color: "from-red-700 to-yellow-600", textColor: "#dc2626", },
+    { id: "boxing", name: "Boxing", description: "El noble arte del pugilismo, técnica y potencia en cada golpe", image: "https://ca-times.brightspotcdn.com/dims4/default/9d05956/2147483647/strip/false/crop/6151x4101+0+0/resize/1486x991!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F8e%2Fe9%2F6dcd220048ff876c3b7a25959f8b%2Fcf57fb4e37694a52974025d0a0e6886f.jpg", color: "from-red-700 to-yellow-600", textColor: "#dc2626", },
 ];
 
 // Datos de la Página de Boxeo
 const boxingProducts = [
-    { name: "Guantes de Boxeo Pro 16oz", price: "$3000.99", rating: 5, image: "https://via.placeholder.com/400x400/dc2626/FFFFFF?text=Guantes+Box", category: "Guantes", },
-    { name: "Casco de Entrenamiento", price: "$2899.99", rating: 5, image: "https://via.placeholder.com/400x400/dc2626/FFFFFF?text=Casco+Box", category: "Protección", },
-    { name: "Vendas de Mano Premium", price: "$349.00", rating: 5, image: "https://via.placeholder.com/400x400/dc2626/FFFFFF?text=Vendas+Box", category: "Accesorios", },
-    { name: "Saco de Boxeo 100lb", price: "$2468.99", rating: 5, image: "https://via.placeholder.com/400x400/dc2626/FFFFFF?text=Saco+Box", category: "Equipamiento", },
-    { name: "Speed Ball Profesional", price: "$4250.99", rating: 4, image: "https://via.placeholder.com/400x400/dc2626/FFFFFF?text=Speed+Ball", category: "Equipamiento", },
-    { name: "Protector Bucal Doble", price: "$90.99", rating: 4, image: "https://via.placeholder.com/400x400/dc2626/FFFFFF?text=Bucal+Box", category: "Protección", },
+    { name: "Guantes de Boxeo Pro 16oz", price: "$3000.99", rating: 5, image: "https://cletoreyes.com/cdn/shop/products/01E4.12.RED.jpg?v=1652221578", category: "Guantes", },
+    { name: "Casco de Entrenamiento", price: "$2899.99", rating: 5, image: "https://cletoreyes.com/cdn/shop/products/04E388.SIL.jpg?v=1715881702&width=800", category: "Protección", },
+    { name: "Vendas de Mano Premium", price: "$349.00", rating: 5, image: "https://http2.mlstatic.com/D_NQ_NP_999945-MLU72410547132_102023-O.webp", category: "Accesorios", },
+    { name: "Saco de Boxeo 100lb", price: "$2468.99", rating: 5, image: "https://decatlonx.com/image/cache/catalog/P00002820-800x800.jpg", category: "Equipamiento", },
+    { name: "Speed Ball Profesional", price: "$4250.99", rating: 4, image: "hhttps://capitalmma.com.mx/cdn/shop/products/Capturadepantalla_36.png?v=1665895245", category: "Equipamiento", },
+    { name: "Protector Bucal Doble", price: "$90.99", rating: 4, image: "https://http2.mlstatic.com/D_NQ_NP_960210-MLM44786915471_022021-O-protector-bucal-title-boxing-super-shield-x2-mma-thai-bjj-rd.webp", category: "Protección", },
 ];
 
 // Datos de la Página de Jiu-Jitsu
