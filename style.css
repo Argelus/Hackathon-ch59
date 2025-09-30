@@ -140,10 +140,16 @@ body.light .home-page-container {
 .hero-title {
     font-size: 4rem; font-weight: 900; line-height: 1.1;
     background: linear-gradient(to right, #ef4444, #f59e0b, #3b82f6);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    background-clip: text; text-fill-color: transparent;
+    -webkit-background-clip: text; /* Corregido: Prefijo Webkit */
+    -webkit-text-fill-color: transparent; /* Corregido: Prefijo Webkit */
+    background-clip: text; /* Para compatibilidad */
 }
 @media (min-width: 768px) { .hero-title { font-size: 6rem; } }
+
+/* Hero Section Background Opacity Adjustment (Ajuste para menos sombreado) */
+.hero-section > div:first-child { 
+    opacity: 0.3; /* Aumentado de 0.1 para que el fondo se vea mejor */
+}
 
 /* Features Grid */
 .feature-card {
@@ -292,7 +298,7 @@ body.light .zone-button-text { color: #1f2937; }
 /* Clases de utilidad */
 .bg-grad-clip {
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    background-clip: text; text-fill-color: transparent;
+    background-clip: text; text-fill-color: transparent; /* Se mantiene text-fill-color para navegadores que lo soporten */
 }
 .bg-filter-blur { backdrop-filter: blur(4px); }
 
@@ -351,5 +357,10 @@ body.light .zone-button-text { color: #1f2937; }
 .card-taekwondo { background-color: #ffffff; border-color: #93c5fd; }
 .card-taekwondo:hover { border-color: #dc2626; box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2); }
 .card-taekwondo .img-bg { background: linear-gradient(to bottom right, #dbeafe, #fee2e2); }
-.card-taekwondo .price-grad { background: linear-gradient(to right, #2563eb, #dc2626); }
+.card-taekwondo .price-grad { 
+    background: linear-gradient(to right, #2563eb, #dc2626);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 .card-taekwondo .rating-color { fill: #2563eb; color: #2563eb; }

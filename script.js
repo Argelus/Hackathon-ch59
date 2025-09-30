@@ -398,7 +398,7 @@ const renderHomePage = () => {
     let homeHtml = `
         <div id="home-page" class="home-page-container min-vh-100">
             <section class="hero-section">
-                <div class="position-absolute w-100 h-100 top-0 start-0" style="background-image: url('https://via.placeholder.com/1920x1080/000000/FFFFFF?text=Pattern'); opacity: 0.1; background-size: cover; background-position: center;" />
+                <div class="position-absolute w-100 h-100 top-0 start-0" style="background-image: url('https://via.placeholder.com/1920x1080/000000/FFFFFF?text=Pattern'); opacity:1; background-size: cover; background-position: center;" />
 
                 <div class="container px-4 py-5 position-relative z-10">
                     
