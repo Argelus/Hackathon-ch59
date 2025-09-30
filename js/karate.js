@@ -108,7 +108,7 @@ function renderKarateProducts(productsToRender) {
               <span class="product-category">${product.category}</span>
               <h4 class="product-title">${product.name}</h4>
               <p class="footer-copy">${product.description}</p>
-              <div class="product-price">$${product.price}</div>
+              <div class="product-price">$${product.price} MXN</div>
               <button class="btn-add-cart" onclick="cart.addItem(${JSON.stringify(product).replace(/"/g, "&quot;")})">
                 <i class="fas fa-shopping-cart"></i> Agregar al Carrito
               </button>
