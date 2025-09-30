@@ -1,0 +1,182 @@
+:root {
+  --tkd-green: #2ecc71;
+  --tkd-dark-green: #27ae60;
+  --tkd-light-green: #58d68d;
+  --tkd-red: #e74c3c;
+  --tkd-black: #0a0a0a;
+}
+
+.taekwondo-page {
+  background: var(--tkd-black);
+  color: white;
+}
+
+.tkd-hero {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #001a0d 0%, #003319 100%);
+  overflow: hidden;
+}
+
+.tkd-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/placeholder.svg?height=1080&width=1920");
+  background-size: cover;
+  opacity: 0.15;
+}
+
+.tkd-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.tkd-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--tkd-green) 0%, var(--tkd-red) 100%);
+  color: white;
+  padding: 0.6rem 1.8rem;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  animation: fadeInDown 1s ease;
+}
+
+.tkd-hero-title {
+  font-size: 7rem;
+  color: white;
+  line-height: 0.9;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1s ease;
+  font-weight: 900;
+}
+
+.tkd-subtitle {
+  display: block;
+  font-size: 2.5rem;
+  color: var(--tkd-light-green);
+  margin-top: 1rem;
+}
+
+.tkd-description {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 650px;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  animation: fadeInUp 1s ease 0.2s backwards;
+}
+
+.tkd-stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease 0.4s backwards;
+}
+
+.stat-tkd {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(46, 204, 113, 0.1);
+  border: 2px solid var(--tkd-green);
+  border-radius: 12px;
+  min-width: 150px;
+}
+
+.num-tkd {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--tkd-green);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.lbl-tkd {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+}
+
+.tkd-products {
+  background: linear-gradient(180deg, var(--tkd-black) 0%, #001a0d 100%);
+}
+
+.section-title-tkd {
+  font-size: 3.5rem;
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title-tkd::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(90deg, var(--tkd-green) 0%, var(--tkd-red) 100%);
+}
+
+.filter-btn-tkd {
+  background: rgba(46, 204, 113, 0.1);
+  color: white;
+  border: 2px solid var(--tkd-green);
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.filter-btn-tkd:hover,
+.filter-btn-tkd.active {
+  background: var(--tkd-green);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(46, 204, 113, 0.4);
+}
+
+.tkd-products .product-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+}
+
+.tkd-products .product-card:hover {
+  border-color: var(--tkd-green);
+  box-shadow: 0 15px 40px rgba(46, 204, 113, 0.3);
+}
+
+.tkd-products .btn-add-cart {
+  background: var(--tkd-green);
+}
+.tkd-products .btn-add-cart:hover {
+  background: var(--tkd-dark-green);
+}
+.tkd-products .product-price {
+  color: var(--tkd-light-green);
+}
+.tkd-products .product-title {
+  color: white;
+}
+.tkd-products .product-category {
+  color: var(--tkd-green);
+}
+
+.taekwondo-page .nav-link.active {
+  color: var(--tkd-green) !important;
+}
+.taekwondo-page .btn-cart {
+  background: var(--tkd-green);
+}
+
+@media (max-width: 768px) {
+  .tkd-hero-title {
+    font-size: 4rem;
+  }
+  .tkd-subtitle {
+    font-size: 1.8rem;
+  }
+}

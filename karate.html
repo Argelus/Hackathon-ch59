@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karate - Equipamiento Profesional | Fight Gear Pro</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/karate.css">
+</head>
+<body class="karate-page">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">FIGHT GEAR</span>
+                <span class="brand-sub">PRO</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="karate.html">Karate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="muay-thai.html">Muay Thai</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="boxing.html">Boxing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jiu-jitsu.html">Jiu-Jitsu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="taekwondo.html">Taekwondo</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-cart" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge" id="cartCount">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="karate-hero">
+        <div class="karate-hero-overlay"></div>
+        <div class="karate-pattern"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8">
+                    <div class="karate-badge">空手道</div>
+                    <h1 class="karate-hero-title">
+                        KARATE
+                        <span class="karate-subtitle">El Camino de la Mano Vacía</span>
+                    </h1>
+                    <p class="karate-description">
+                        Disciplina, precisión y respeto. Descubre el equipamiento tradicional 
+                        para el arte marcial japonés más respetado del mundo.
+                    </p>
+                    <div class="karate-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">1922</div>
+                            <div class="stat-label">Año de Fundación</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100M+</div>
+                            <div class="stat-label">Practicantes</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">192</div>
+                            <div class="stat-label">Países</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="karate-philosophy py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="philosophy-image">
+                        <img src="public/white-karate-gi-uniform.jpg" alt="Karate Gi tradicional" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title-karate">La Filosofía del Karate</h2>
+                    <div class="philosophy-content">
+                        <div class="philosophy-item">
+                            <div class="philosophy-icon">礼</div>
+                            <div>
+                                <h4>Rei - Respeto</h4>
+                                <p>El respeto es la base de todas las relaciones en el dojo</p>
+                            </div>
+                        </div>
+                        <div class="philosophy-item">
+                            <div class="philosophy-icon">誠</div>
+                            <div>
+                                <h4>Makoto - Sinceridad</h4>
+                                <p>Actuar con honestidad y autenticidad en cada movimiento</p>
+                            </div>
+                        </div>
+                        <div class="philosophy-item">
+                            <div class="philosophy-icon">勇</div>
+                            <div>
+                                <h4>Yū - Coraje</h4>
+                                <p>Enfrentar los desafíos con valentía y determinación</p>
+                            </div>
+                        </div>
+                        <div class="philosophy-item">
+                            <div class="philosophy-icon">忍</div>
+                            <div>
+                                <h4>Nin - Perseverancia</h4>
+                                <p>La paciencia y la persistencia llevan a la maestría</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="karate-products py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title-karate">Equipamiento Profesional</h2>
+                <p class="footer-copy">Productos certificados para entrenamiento y competición</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons mb-4">
+                <button class="filter-btn active" data-filter="all">Todo</button>
+                <button class="filter-btn" data-filter="gi">Gi & Uniformes</button>
+                <button class="filter-btn" data-filter="protection">Protección</button>
+                <button class="filter-btn" data-filter="accessories">Accesorios</button>
+            </div>
+
+            <div class="row g-4" id="karateProductsContainer">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Techniques Section -->
+    <section class="karate-techniques py-5">
+        <div class="container">
+            <h2 class="section-title-karate text-center mb-5">Técnicas Fundamentales</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="technique-card">
+                        <div class="technique-icon">拳</div>
+                        <h4>Kihon</h4>
+                        <p>Técnicas básicas y fundamentales</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="technique-card">
+                        <div class="technique-icon">型</div>
+                        <h4>Kata</h4>
+                        <p>Formas y patrones de movimiento</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="technique-card">
+                        <div class="technique-icon">組</div>
+                        <h4>Kumite</h4>
+                        <p>Combate y aplicación práctica</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="technique-card">
+                        <div class="technique-icon">心</div>
+                        <h4>Kokoro</h4>
+                        <p>Desarrollo mental y espiritual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="karate-cta py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Comienza Tu Viaje en el Karate</h2>
+            <p class="lead mb-4">Equípate con lo mejor para tu entrenamiento</p>
+            <a href="#karateProductsContainer" class="btn btn-karate btn-lg">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="brand-text mb-3">FIGHT GEAR PRO</h3>
+                    <p class="footer-copy">Equipamiento profesional para todas las disciplinas de combate.</p>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="mb-3">Categorías</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="karate.html">Karate</a></li>
+                        <li><a href="muay-thai.html">Muay Thai</a></li>
+                        <li><a href="boxing.html">Boxing</a></li>
+                        <li><a href="jiu-jitsu.html">Jiu-Jitsu</a></li>
+                        <li><a href="taekwondo.html">Taekwondo</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="mb-3">Equipamiento</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="body-parts/head.html">Cabeza</a></li>
+                        <li><a href="body-parts/hands.html">Manos</a></li>
+                        <li><a href="body-parts/torso.html">Torso</a></li>
+                        <li><a href="body-parts/feet.html">Pies</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="mb-3">Síguenos</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center footer-copy">
+                <p>&copy; 2025 Fight Gear Pro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItems"></div>
+                    <div class="cart-total mt-4">
+                        <h4>Total: $<span id="cartTotal">0</span></h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir Comprando</button>
+                    <button type="button" class="btn btn-primary" id="checkoutBtn">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/karate.js"></script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+/* Karate Page Specific Styles */
+:root {
+  --karate-gold: #d4af37;
+  --karate-dark-gold: #8b7500;
+  --karate-white: #f8f8f8;
+  --karate-black: #1a1a1a;
+  --karate-red: #c41e3a;
+}
+
+.karate-page {
+  background: var(--karate-white);
+  color: var(--karate-black);
+}
+
+/* Hero Section */
+.karate-hero {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  overflow: hidden;
+}
+
+.karate-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/placeholder.svg?height=1080&width=1920");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.karate-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 35px,
+      rgba(212, 175, 55, 0.05) 35px,
+      rgba(212, 175, 55, 0.05) 70px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 35px,
+      rgba(212, 175, 55, 0.05) 35px,
+      rgba(212, 175, 55, 0.05) 70px
+    );
+}
+
+.karate-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.karate-badge {
+  display: inline-block;
+  background: var(--karate-gold);
+  color: var(--karate-black);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  animation: fadeInDown 1s ease;
+}
+
+.karate-hero-title {
+  font-size: 6rem;
+  color: var(--karate-white);
+  line-height: 1;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1s ease;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.karate-subtitle {
+  display: block;
+  font-size: 2rem;
+  color: var(--karate-gold);
+  margin-top: 1rem;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
+}
+
+.karate-description {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  animation: fadeInUp 1s ease 0.2s backwards;
+}
+
+.karate-stats {
+  display: flex;
+  gap: 3rem;
+  animation: fadeInUp 1s ease 0.4s backwards;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--karate-gold);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Philosophy Section */
+.karate-philosophy {
+  background: var(--karate-white);
+  color: var(--karate-black);
+}
+
+.philosophy-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3);
+}
+
+.philosophy-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, transparent 100%);
+  z-index: 1;
+}
+
+.philosophy-image img {
+  transition: transform 0.5s ease;
+}
+
+.philosophy-image:hover img {
+  transform: scale(1.05);
+}
+
+.section-title-karate {
+  font-size: 3rem;
+  color: var(--karate-black);
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title-karate::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: var(--karate-gold);
+}
+
+.philosophy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.philosophy-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--karate-gold);
+}
+
+.philosophy-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+.philosophy-icon {
+  font-size: 3rem;
+  color: var(--karate-gold);
+  font-family: "Noto Serif JP", serif;
+  min-width: 60px;
+  text-align: center;
+}
+
+.philosophy-item h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--karate-black);
+}
+
+.philosophy-item p {
+  color: #666;
+  margin: 0;
+}
+
+/* Products Section */
+.karate-products {
+  background: linear-gradient(180deg, var(--karate-white) 0%, #f0f0f0 100%);
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: white;
+  color: var(--karate-black);
+  border: 2px solid var(--karate-gold);
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--karate-gold);
+  color: var(--karate-black);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.karate-products .product-card {
+  background: white;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.karate-products .product-card:hover {
+  border-color: var(--karate-gold);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+}
+
+.karate-products .btn-add-cart {
+  background: var(--karate-gold);
+  color: var(--karate-black);
+}
+
+.karate-products .btn-add-cart:hover {
+  background: var(--karate-dark-gold);
+  color: white;
+}
+
+.karate-products .product-price {
+  color: var(--karate-gold);
+}
+
+.karate-products .product-title {
+  color: var(--karate-black);
+}
+
+.karate-products .product-category {
+  color: var(--karate-gold);
+}
+
+/* Techniques Section */
+.karate-techniques {
+  background: var(--karate-black);
+  color: white;
+}
+
+.karate-techniques .section-title-karate {
+  color: white;
+}
+
+.technique-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  height: 100%;
+}
+
+.technique-card:hover {
+  background: rgba(212, 175, 55, 0.1);
+  border-color: var(--karate-gold);
+  transform: translateY(-10px);
+}
+
+.technique-icon {
+  font-size: 4rem;
+  color: var(--karate-gold);
+  font-family: "Noto Serif JP", serif;
+  margin-bottom: 1rem;
+}
+
+.technique-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--karate-gold);
+}
+
+.technique-card p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* CTA Section */
+.karate-cta {
+  background: linear-gradient(135deg, var(--karate-gold) 0%, var(--karate-dark-gold) 100%);
+  color: var(--karate-black);
+}
+
+.karate-cta h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.btn-karate {
+  background: var(--karate-black);
+  color: var(--karate-gold);
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-karate:hover {
+  background: white;
+  color: var(--karate-black);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .karate-hero-title {
+    font-size: 3.5rem;
+  }
+
+  .karate-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .karate-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .section-title-karate {
+    font-size: 2rem;
+  }
+
+  .philosophy-icon {
+    font-size: 2rem;
+  }
+
+  .technique-icon {
+    font-size: 3rem;
+  }
+}
+
+/* Navbar override for karate page */
+.karate-page .navbar {
+  background: rgba(26, 26, 26, 0.95);
+}
+
+.karate-page .nav-link.active {
+  color: var(--karate-gold) !important;
+}
+
+.karate-page .btn-cart {
+  background: var(--karate-gold);
+  color: var(--karate-black);
+}
+
+.karate-page .btn-cart:hover {
+  background: var(--karate-dark-gold);
+}

@@ -1,0 +1,189 @@
+:root {
+  --jj-purple: #9b59b6;
+  --jj-dark-purple: #8e44ad;
+  --jj-light-purple: #bb8fce;
+  --jj-black: #0a0a0a;
+}
+
+.jiu-jitsu-page {
+  background: var(--jj-black);
+  color: white;
+}
+
+.jj-hero {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a001a 0%, #330033 100%);
+  overflow: hidden;
+}
+
+.jj-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/placeholder.svg?height=1080&width=1920");
+  background-size: cover;
+  opacity: 0.15;
+}
+
+.jj-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.jj-badge {
+  display: inline-block;
+  background: var(--jj-purple);
+  color: white;
+  padding: 0.6rem 1.8rem;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  animation: fadeInDown 1s ease;
+}
+
+.jj-hero-title {
+  font-size: 7rem;
+  color: white;
+  line-height: 0.9;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1s ease;
+  font-weight: 900;
+}
+
+.jj-subtitle {
+  display: block;
+  font-size: 2.5rem;
+  color: var(--jj-light-purple);
+  margin-top: 1rem;
+}
+
+.jj-description {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 650px;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  animation: fadeInUp 1s ease 0.2s backwards;
+}
+
+.jj-belts {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease 0.4s backwards;
+}
+
+.belt-item {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.white-belt {
+  background: white;
+  color: black;
+}
+.blue-belt {
+  background: #3498db;
+  color: white;
+}
+.purple-belt {
+  background: var(--jj-purple);
+  color: white;
+}
+.brown-belt {
+  background: #8b4513;
+  color: white;
+}
+.black-belt {
+  background: black;
+  color: white;
+  border: 2px solid var(--jj-purple);
+}
+
+.jj-products {
+  background: linear-gradient(180deg, var(--jj-black) 0%, #1a001a 100%);
+}
+
+.section-title-jj {
+  font-size: 3.5rem;
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title-jj::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100px;
+  height: 5px;
+  background: var(--jj-purple);
+}
+
+.filter-btn-jj {
+  background: rgba(155, 89, 182, 0.1);
+  color: white;
+  border: 2px solid var(--jj-purple);
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.filter-btn-jj:hover,
+.filter-btn-jj.active {
+  background: var(--jj-purple);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(155, 89, 182, 0.4);
+}
+
+.jj-products .product-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+}
+
+.jj-products .product-card:hover {
+  border-color: var(--jj-purple);
+  box-shadow: 0 15px 40px rgba(155, 89, 182, 0.3);
+}
+
+.jj-products .btn-add-cart {
+  background: var(--jj-purple);
+}
+.jj-products .btn-add-cart:hover {
+  background: var(--jj-dark-purple);
+}
+.jj-products .product-price {
+  color: var(--jj-light-purple);
+}
+.jj-products .product-title {
+  color: white;
+}
+.jj-products .product-category {
+  color: var(--jj-purple);
+}
+
+.jiu-jitsu-page .nav-link.active {
+  color: var(--jj-purple) !important;
+}
+.jiu-jitsu-page .btn-cart {
+  background: var(--jj-purple);
+}
+
+@media (max-width: 768px) {
+  .jj-hero-title {
+    font-size: 4rem;
+  }
+  .jj-subtitle {
+    font-size: 1.8rem;
+  }
+}

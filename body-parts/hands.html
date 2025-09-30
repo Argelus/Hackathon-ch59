@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protección de Manos | Fight Gear Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .body-part-hero { background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); min-height: 60vh; display: flex; align-items: center; }
+        .body-part-hero h1 { font-size: 4rem; color: white; }
+        .body-part-hero p { font-size: 1.2rem; color: rgba(255,255,255,0.8); }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="../index.html">
+                <span class="brand-text">FIGHT GEAR</span>
+                <span class="brand-sub">PRO</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-cart" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge" id="cartCount">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="body-part-hero">
+        <div class="container">
+            <h1><i class="fas fa-hand-rock"></i> Protección de Manos</h1>
+            <p>Guantes, vendas y protectores para mantener tus manos seguras y listas para el combate</p>
+        </div>
+    </section>
+
+    <section class="py-5" style="background: #0a0a0a;">
+        <div class="container">
+            <div class="row g-4" id="handsProductsContainer"></div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItems"></div>
+                    <div class="cart-total mt-4"><h4>Total: $<span id="cartTotal">0</span></h4></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir Comprando</button>
+                    <button type="button" class="btn btn-primary" id="checkoutBtn">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/products.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const handsProducts = products.filter(p => p.bodyPart === 'hands');
+            const container = document.getElementById('handsProductsContainer');
+            
+            if (handsProducts.length === 0) {
+                container.innerHTML = '<div class="col-12 text-center text-white"><p>No hay productos disponibles para esta categoría en este momento.</p></div>';
+            } else {
+                container.innerHTML = handsProducts.map(p => `
+                    <div class="col-md-6 col-lg-4">
+                        <div class="product-card">
+                            <img src="${p.image.startsWith('/') ? '..' + p.image : '../' + p.image}" alt="${p.name}" class="product-image">
+                            <div class="product-body">
+                                <span class="product-category">${p.category}</span>
+                                <h4 class="product-title">${p.name}</h4>
+                                <p class="footer-copy">${p.description}</p>
+                                <div class="product-price">$${p.price}</div>
+                                <button class="btn-add-cart" onclick="cart.addItem(${JSON.stringify(p).replace(/"/g, '&quot;')})">
+                                    <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        });
+    </script>
+</body>
+</html>

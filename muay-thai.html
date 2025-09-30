@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muay Thai - El Arte de las 8 Extremidades | Fight Gear Pro</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700;900&family=Sarabun:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/muay-thai.css">
+</head>
+<body class="muay-thai-page">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">FIGHT GEAR</span>
+                <span class="brand-sub">PRO</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="karate.html">Karate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="muay-thai.html">Muay Thai</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="boxing.html">Boxing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jiu-jitsu.html">Jiu-Jitsu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="taekwondo.html">Taekwondo</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-cart" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge" id="cartCount">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="muay-thai-hero">
+        <div class="muay-thai-hero-overlay"></div>
+        <div class="thai-pattern-bg"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8">
+                    <div class="muay-thai-badge">
+                        <span class="thai-text">มวยไทย</span>
+                    </div>
+                    <h1 class="muay-thai-hero-title">
+                        MUAY THAI
+                        <span class="muay-thai-subtitle">El Arte de las 8 Extremidades</span>
+                    </h1>
+                    <p class="muay-thai-description">
+                        El deporte nacional de Tailandia. Una disciplina ancestral que combina 
+                        puños, codos, rodillas y piernas en perfecta armonía. Descubre el equipamiento 
+                        profesional para guerreros modernos.
+                    </p>
+                    <div class="muay-thai-weapons">
+                        <div class="weapon-item">
+                            <i class="fas fa-hand-fist"></i>
+                            <span>Puños</span>
+                        </div>
+                        <div class="weapon-item">
+                            <i class="fas fa-hand-back-fist"></i>
+                            <span>Codos</span>
+                        </div>
+                        <div class="weapon-item">
+                            <i class="fas fa-shoe-prints"></i>
+                            <span>Rodillas</span>
+                        </div>
+                        <div class="weapon-item">
+                            <i class="fas fa-person-running"></i>
+                            <span>Piernas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tradition Section -->
+    <section class="muay-thai-tradition py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <div class="tradition-image-wrapper">
+                        <div class="tradition-frame"></div>
+                        <!-- Tradition Section (solo cambia el src) -->
+                        <img src="public/muay-thai-shorts-red-gold.jpg"
+                        alt="Muay Thai Tradition"
+                        class="img-fluid tradition-image">
+
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="section-title-muay-thai">Tradición Ancestral</h2>
+                    <p class="lead mb-4">
+                        El Muay Thai es más que un deporte de combate, es una forma de vida 
+                        que ha sido perfeccionada durante siglos en Tailandia.
+                    </p>
+                    <div class="tradition-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Poder Devastador</h4>
+                                <p>Técnicas de striking más efectivas del mundo</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart-pulse"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Acondicionamiento Extremo</h4>
+                                <p>Desarrolla resistencia cardiovascular superior</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-halved"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Defensa Personal</h4>
+                                <p>Sistema de combate probado en situaciones reales</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Disciplina Mental</h4>
+                                <p>Fortalece la mente y el espíritu del guerrero</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="muay-thai-products py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title-muay-thai">Equipamiento Profesional</h2>
+                <p class="text-light">Equipo certificado para entrenamiento y competición</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons mb-4">
+                <button class="filter-btn-mt active" data-filter="all">Todo</button>
+                <button class="filter-btn-mt" data-filter="gloves">Guantes</button>
+                <button class="filter-btn-mt" data-filter="protection">Protección</button>
+                <button class="filter-btn-mt" data-filter="apparel">Ropa</button>
+            </div>
+
+            <div class="row g-4" id="muayThaiProductsContainer">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Techniques Section -->
+    <section class="muay-thai-techniques py-5">
+        <div class="container">
+            <h2 class="section-title-muay-thai text-center mb-5">Las 8 Armas</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="technique-card-mt">
+                        <div class="technique-number">01</div>
+                        <div class="technique-icon-mt">
+                            <i class="fas fa-hand-fist"></i>
+                        </div>
+                        <h4>Jab & Cross</h4>
+                        <p>Golpes directos de puño con velocidad y precisión</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="technique-card-mt">
+                        <div class="technique-number">02</div>
+                        <div class="technique-icon-mt">
+                            <i class="fas fa-hand-back-fist"></i>
+                        </div>
+                        <h4>Sok (Codos)</h4>
+                        <p>Golpes devastadores de corta distancia</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="technique-card-mt">
+                        <div class="technique-number">03</div>
+                        <div class="technique-icon-mt">
+                            <i class="fas fa-shoe-prints"></i>
+                        </div>
+                        <h4>Khao (Rodillas)</h4>
+                        <p>Arma poderosa en el clinch</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="technique-card-mt">
+                        <div class="technique-number">04</div>
+                        <div class="technique-icon-mt">
+                            <i class="fas fa-person-running"></i>
+                        </div>
+                        <h4>Teep & Kicks</h4>
+                        <p>Patadas frontales y circulares letales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section class="muay-thai-training py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title-muay-thai">Entrena Como un Campeón</h2>
+                    <p class="lead mb-4">
+                        El entrenamiento de Muay Thai es intenso y requiere dedicación absoluta. 
+                        Equípate con lo mejor para alcanzar tu máximo potencial.
+                    </p>
+                    <ul class="training-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Guantes de alta calidad para protección óptima</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Espinilleras diseñadas para impactos repetidos</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Shorts tradicionales para máxima movilidad</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Vendas y protectores bucales profesionales</span>
+                        </li>
+                    </ul>
+                    <a href="#muayThaiProductsContainer" class="btn btn-muay-thai btn-lg mt-4">
+                        Ver Equipamiento
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="training-stats">
+                        <div class="stat-card-mt">
+                            <div class="stat-icon-mt">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <div class="stat-number-mt">2000+</div>
+                            <div class="stat-label-mt">Calorías por Sesión</div>
+                        </div>
+                        <div class="stat-card-mt">
+                            <div class="stat-icon-mt">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-number-mt">3-5</div>
+                            <div class="stat-label-mt">Horas de Entrenamiento</div>
+                        </div>
+                        <div class="stat-card-mt">
+                            <div class="stat-icon-mt">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="stat-number-mt">100%</div>
+                            <div class="stat-label-mt">Dedicación Requerida</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="brand-text mb-3">FIGHT GEAR PRO</h3>
+                    <p class="footer-copy">Equipamiento profesional para todas las disciplinas de combate.</p>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="mb-3">Categorías</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="karate.html">Karate</a></li>
+                        <li><a href="muay-thai.html">Muay Thai</a></li>
+                        <li><a href="boxing.html">Boxing</a></li>
+                        <li><a href="jiu-jitsu.html">Jiu-Jitsu</a></li>
+                        <li><a href="taekwondo.html">Taekwondo</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="mb-3">Equipamiento</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="body-parts/head.html">Cabeza</a></li>
+                        <li><a href="body-parts/hands.html">Manos</a></li>
+                        <li><a href="body-parts/torso.html">Torso</a></li>
+                        <li><a href="body-parts/feet.html">Pies</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="mb-3">Síguenos</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center footer-copy">
+                <p>&copy; 2025 Fight Gear Pro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItems"></div>
+                    <div class="cart-total mt-4">
+                        <h4>Total: $<span id="cartTotal">0</span></h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir Comprando</button>
+                    <button type="button" class="btn btn-primary" id="checkoutBtn">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/muay-thai.js"></script>
+</body>
+</html>

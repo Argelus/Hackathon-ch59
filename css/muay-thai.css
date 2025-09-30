@@ -1,0 +1,514 @@
+/* Muay Thai Page Specific Styles */
+:root {
+  --muay-thai-red: #e74c3c;
+  --muay-thai-dark-red: #c0392b;
+  --muay-thai-gold: #f39c12;
+  --muay-thai-dark-gold: #d68910;
+  --muay-thai-black: #0a0a0a;
+  --muay-thai-white: #ffffff;
+}
+
+.muay-thai-page {
+  background: var(--muay-thai-black);
+  color: var(--muay-thai-white);
+}
+
+/* Hero Section */
+.muay-thai-hero {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a0000 0%, #3d0000 100%);
+  overflow: hidden;
+}
+
+.muay-thai-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/placeholder.svg?height=1080&width=1920");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+}
+
+.thai-pattern-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 50px,
+      rgba(231, 76, 60, 0.03) 50px,
+      rgba(231, 76, 60, 0.03) 100px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 50px,
+      rgba(243, 156, 18, 0.03) 50px,
+      rgba(243, 156, 18, 0.03) 100px
+    );
+}
+
+.muay-thai-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.muay-thai-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--muay-thai-red) 0%, var(--muay-thai-gold) 100%);
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+  animation: fadeInDown 1s ease;
+  box-shadow: 0 5px 20px rgba(231, 76, 60, 0.4);
+}
+
+.thai-text {
+  font-family: "Sarabun", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.muay-thai-hero-title {
+  font-size: 7rem;
+  color: var(--muay-thai-white);
+  line-height: 0.9;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1s ease;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+.muay-thai-subtitle {
+  display: block;
+  font-size: 2.2rem;
+  background: linear-gradient(135deg, var(--muay-thai-red) 0%, var(--muay-thai-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.muay-thai-description {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 650px;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  animation: fadeInUp 1s ease 0.2s backwards;
+}
+
+.muay-thai-weapons {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease 0.4s backwards;
+}
+
+.weapon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.5rem;
+  background: rgba(231, 76, 60, 0.1);
+  border: 2px solid var(--muay-thai-red);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.weapon-item:hover {
+  background: rgba(231, 76, 60, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
+}
+
+.weapon-item i {
+  font-size: 2.5rem;
+  color: var(--muay-thai-gold);
+}
+
+.weapon-item span {
+  font-weight: 600;
+  color: var(--muay-thai-white);
+  font-size: 1rem;
+}
+
+/* Tradition Section */
+.muay-thai-tradition {
+  background: linear-gradient(180deg, var(--muay-thai-black) 0%, #1a0000 100%);
+}
+
+.tradition-image-wrapper {
+  position: relative;
+}
+
+.tradition-frame {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--muay-thai-red);
+  border-radius: 15px;
+  z-index: 0;
+}
+
+.tradition-image {
+  position: relative;
+  z-index: 1;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(231, 76, 60, 0.4);
+}
+
+.section-title-muay-thai {
+  font-size: 3.5rem;
+  color: var(--muay-thai-white);
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title-muay-thai::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(90deg, var(--muay-thai-red) 0%, var(--muay-thai-gold) 100%);
+}
+
+.tradition-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(231, 76, 60, 0.05);
+  border-radius: 12px;
+  border-left: 4px solid var(--muay-thai-red);
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  background: rgba(231, 76, 60, 0.1);
+  transform: translateX(10px);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--muay-thai-red) 0%, var(--muay-thai-gold) 100%);
+  border-radius: 12px;
+  font-size: 1.8rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.feature-content h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--muay-thai-white);
+}
+
+.feature-content p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* Products Section */
+.muay-thai-products {
+  background: linear-gradient(180deg, #1a0000 0%, var(--muay-thai-black) 100%);
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn-mt {
+  background: rgba(231, 76, 60, 0.1);
+  color: var(--muay-thai-white);
+  border: 2px solid var(--muay-thai-red);
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.filter-btn-mt:hover,
+.filter-btn-mt.active {
+  background: linear-gradient(135deg, var(--muay-thai-red) 0%, var(--muay-thai-gold) 100%);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(231, 76, 60, 0.4);
+}
+
+.muay-thai-products .product-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.muay-thai-products .product-card:hover {
+  border-color: var(--muay-thai-red);
+  box-shadow: 0 15px 40px rgba(231, 76, 60, 0.3);
+}
+
+.muay-thai-products .btn-add-cart {
+  background: linear-gradient(135deg, var(--muay-thai-red) 0%, var(--muay-thai-gold) 100%);
+  color: white;
+}
+
+.muay-thai-products .btn-add-cart:hover {
+  background: linear-gradient(135deg, var(--muay-thai-dark-red) 0%, var(--muay-thai-dark-gold) 100%);
+}
+
+.muay-thai-products .product-price {
+  color: var(--muay-thai-gold);
+}
+
+.muay-thai-products .product-title {
+  color: var(--muay-thai-white);
+}
+
+.muay-thai-products .product-category {
+  color: var(--muay-thai-red);
+}
+
+/* Techniques Section */
+.muay-thai-techniques {
+  background: var(--muay-thai-black);
+  position: relative;
+  overflow: hidden;
+}
+
+.muay-thai-techniques::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(231, 76, 60, 0.1) 0%, transparent 70%);
+}
+
+.muay-thai-techniques .container {
+  position: relative;
+  z-index: 1;
+}
+
+.technique-card-mt {
+  background: linear-gradient(135deg, rgba(231, 76, 60, 0.1) 0%, rgba(243, 156, 18, 0.05) 100%);
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.technique-card-mt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--muay-thai-red) 0%, var(--muay-thai-gold) 100%);
+}
+
+.technique-card-mt:hover {
+  background: linear-gradient(135deg, rgba(231, 76, 60, 0.2) 0%, rgba(243, 156, 18, 0.1) 100%);
+  border-color: var(--muay-thai-red);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(231, 76, 60, 0.3);
+}
+
+.technique-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(231, 76, 60, 0.2);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.technique-icon-mt {
+  font-size: 4rem;
+  color: var(--muay-thai-gold);
+  margin-bottom: 1.5rem;
+}
+
+.technique-card-mt h4 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: var(--muay-thai-white);
+}
+
+.technique-card-mt p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* Training Section */
+.muay-thai-training {
+  background: linear-gradient(135deg, #1a0000 0%, var(--muay-thai-black) 100%);
+}
+
+.training-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.training-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.training-list i {
+  color: var(--muay-thai-gold);
+  font-size: 1.5rem;
+}
+
+.btn-muay-thai {
+  background: linear-gradient(135deg, var(--muay-thai-red) 0%, var(--muay-thai-gold) 100%);
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-muay-thai:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(231, 76, 60, 0.4);
+  color: white;
+}
+
+.training-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-card-mt {
+  background: rgba(231, 76, 60, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid var(--muay-thai-red);
+  transition: all 0.3s ease;
+}
+
+.stat-card-mt:hover {
+  background: rgba(231, 76, 60, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
+}
+
+.stat-icon-mt {
+  font-size: 3rem;
+  color: var(--muay-thai-gold);
+  margin-bottom: 1rem;
+}
+
+.stat-number-mt {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--muay-thai-white);
+  font-family: "Bebas Neue", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label-mt {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .muay-thai-hero-title {
+    font-size: 4rem;
+  }
+
+  .muay-thai-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .muay-thai-weapons {
+    gap: 1rem;
+  }
+
+  .weapon-item {
+    min-width: 100px;
+    padding: 1rem;
+  }
+
+  .section-title-muay-thai {
+    font-size: 2.5rem;
+  }
+
+  .technique-number {
+    font-size: 2rem;
+  }
+
+  .training-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Navbar override for muay thai page */
+.muay-thai-page .navbar {
+  background: rgba(10, 10, 10, 0.95);
+}
+
+.muay-thai-page .nav-link.active {
+  color: var(--muay-thai-red) !important;
+}
+
+.muay-thai-page .btn-cart {
+  background: linear-gradient(135deg, var(--muay-thai-red) 0%, var(--muay-thai-gold) 100%);
+  color: white;
+}
+
+.muay-thai-page .btn-cart:hover {
+  background: linear-gradient(135deg, var(--muay-thai-dark-red) 0%, var(--muay-thai-dark-gold) 100%);
+}
